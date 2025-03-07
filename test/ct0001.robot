@@ -47,3 +47,15 @@ Tentativa de pré-cadastro
     ${EMPTY}    marcelalima_@msn.comando     01234567890      Por favor informe o seu nome  
     Marcela    ${EMPTY}                      01234567890      Por favor informe o seu email      
     Marcela   marcelalima_@msn.comando       ${EMPTY}         Por favor informe o seu cpf      
+
+Tentativa de pré-cadastro
+    [Template]    Attemp Signup
+    ${EMPTY}    marcelalima_@msn.comando     01234567890      Por favor informe o seu nome  
+    Marcela    ${EMPTY}                      01234567890      Por favor informe o seu email      
+    Marcela   marcelalima_@msn.comando       ${EMPTY}         Por favor informe o seu cpf     
+
+Tentativa de pré-cadastro
+    [Template]    Attemp Signup
+    ${EMPTY}    marcelalima_@msn.comando     01234567890      Por favor informe o seu nome  
+    Marcela    ${EMPTY}                      01234567890      Por favor informe o seu email      
+    Marcela   marcelalima_@msn.comando       ${EMPTY}         Por favor informe o seu cpf     
