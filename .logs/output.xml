@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20250306 23:14:38.001" rpa="false" schemaversion="4">
+<suite id="s1" name="Test" source="C:\Users\maln\OneDrive - GFT Technologies SE\Documents\MeuProjeto\testes\test">
+<suite id="s1-s1" name="Ct0001" source="C:\Users\maln\OneDrive - GFT Technologies SE\Documents\MeuProjeto\testes\test\ct0001.robot">
+<test id="s1-s1-t1" name="Exemplo de dicionario" line="22">
+<kw name="Abrir navegador" library="Main" type="SETUP">
+<kw name="New Browser" library="Browser">
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20250306 23:14:40.641" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\maln\\OneDrive - GFT Technologies SE\\Documents\\MeuProjeto\\testes\\.logs\\browser\\traces\\temp\\b9886593-ef75-4737-8136-0bedcb6006c2"}</msg>
+<msg timestamp="20250306 23:14:40.754" level="INFO">Starting Browser process C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js using port 62979</msg>
+<msg timestamp="20250306 23:14:40.755" level="INFO">Node startup parameters: ['node', 'C:\\Users\\maln\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\Browser\\wrapper\\index.js', '62979']</msg>
+<msg timestamp="20250306 23:14:50.409" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\maln\\OneDrive - GFT Technologies SE\\Documents\\MeuProjeto\\testes\\.logs\\browser\\traces\\temp\\b9886593-ef75-4737-8136-0bedcb6006c2"}</msg>
+<status status="PASS" starttime="20250306 23:14:40.638" endtime="20250306 23:14:50.409"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://www.udemy.com/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20250306 23:15:03.003" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20250306 23:15:03.003" level="INFO">See also file:///C:/Users/maln/OneDrive%20-%20GFT%20Technologies%20SE/Documents/MeuProjeto/testes/.logs/playwright-log.txt for additional details.</msg>
+<msg timestamp="20250306 23:15:03.004" level="FAIL">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://www.udemy.com/", waiting until "load"
+</msg>
+<status status="FAIL" starttime="20250306 23:14:50.410" endtime="20250306 23:15:03.015"/>
+</kw>
+<status status="FAIL" starttime="20250306 23:14:40.636" endtime="20250306 23:15:03.016"/>
+</kw>
+<kw name="Take Screenshot" library="Browser" type="TEARDOWN">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20250306 23:15:03.775" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg timestamp="20250306 23:15:03.776" level="INFO">See also file:///C:/Users/maln/OneDrive%20-%20GFT%20Technologies%20SE/Documents/MeuProjeto/testes/.logs/playwright-log.txt for additional details.</msg>
+<msg timestamp="20250306 23:15:03.776" level="FAIL">Error: Tried to take screenshot, but no page was open.</msg>
+<status status="FAIL" starttime="20250306 23:15:03.305" endtime="20250306 23:15:03.781">Error: Tried to take screenshot, but no page was open.</status>
+</kw>
+<status status="FAIL" starttime="20250306 23:14:40.634" endtime="20250306 23:15:03.783">Setup failed:
+TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://www.udemy.com/", waiting until "load"
+
+
+Also teardown failed:
+Error: Tried to take screenshot, but no page was open.</status>
+</test>
+<test id="s1-s1-t2" name="Exemplo de dicionario sem campo name preenchido" line="35">
+<kw name="Abrir navegador" library="Main" type="SETUP">
+<kw name="New Browser" library="Browser">
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20250306 23:15:03.977" level="INFO">Switching browser to browser=1df31c76-1fb6-425e-b0b9-6dc261a17b3f</msg>
+<msg timestamp="20250306 23:15:03.986" level="INFO">Successfully changed active browser: browser=1df31c76-1fb6-425e-b0b9-6dc261a17b3f</msg>
+<msg timestamp="20250306 23:15:03.986" level="INFO">Reusing existing browser with id: browser=1df31c76-1fb6-425e-b0b9-6dc261a17b3f</msg>
+<status status="PASS" starttime="20250306 23:15:03.976" endtime="20250306 23:15:03.986"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://www.udemy.com/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20250306 23:15:08.369" level="INFO">Successfully initialized new page object and opened url: https://www.udemy.com/</msg>
+<msg timestamp="20250306 23:15:08.369" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20250306 23:15:03.987" endtime="20250306 23:15:08.369"/>
+</kw>
+<status status="PASS" starttime="20250306 23:15:03.974" endtime="20250306 23:15:08.370"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${account}</var>
+<arg>name=${EMPTY}</arg>
+<arg>email=johndoe@example.com</arg>
+<arg>cpf=12345678900</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20250306 23:15:08.456" level="INFO">${account} = {'name': '', 'email': 'johndoe@example.com', 'cpf': '12345678900'}</msg>
+<status status="PASS" starttime="20250306 23:15:08.451" endtime="20250306 23:15:08.457"/>
+</kw>
+<kw name="Submit Signup Form" library="Custodia">
+<arg>${account}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>id=name</arg>
+<arg>${account}[name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20250306 23:15:08.468" level="INFO">Fills the text '' in the given field.</msg>
+<msg timestamp="20250306 23:15:19.361" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg timestamp="20250306 23:15:19.361" level="INFO">See also file:///C:/Users/maln/OneDrive%20-%20GFT%20Technologies%20SE/Documents/MeuProjeto/testes/.logs/playwright-log.txt for additional details.</msg>
+<msg timestamp="20250306 23:15:19.362" level="FAIL">TimeoutError: locator.fill: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('id=name')
+</msg>
+<status status="FAIL" starttime="20250306 23:15:08.466" endtime="20250306 23:15:19.425"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=email</arg>
+<arg>${account}[email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20250306 23:15:19.426" endtime="20250306 23:15:19.427"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=cpf</arg>
+<arg>${account}[cpf]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20250306 23:15:19.428" endtime="20250306 23:15:19.428"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>css=button[type="submit"] &gt;&gt; text=Enviar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20250306 23:15:19.429" endtime="20250306 23:15:19.429"/>
+</kw>
+<status status="FAIL" starttime="20250306 23:15:08.463" endtime="20250306 23:15:19.430"/>
+</kw>
+<kw name="Notice should be" library="Custodia">
+<arg>O campo nome é obrigatório</arg>
+<status status="NOT RUN" starttime="20250306 23:15:19.431" endtime="20250306 23:15:19.432"/>
+</kw>
+<kw name="Take Screenshot" library="Browser" type="TEARDOWN">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20250306 23:15:19.756" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20250306 23:15:19.433" endtime="20250306 23:15:19.757"/>
+</kw>
+<status status="FAIL" starttime="20250306 23:15:03.965" endtime="20250306 23:15:19.758">TimeoutError: locator.fill: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('id=name')
+</status>
+</test>
+<test id="s1-s1-t3" name="Tentativa de pré-cadastro" line="45">
+<kw name="Abrir navegador" library="Main" type="SETUP">
+<kw name="New Browser" library="Browser">
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20250306 23:15:20.111" level="INFO">Switching browser to browser=1df31c76-1fb6-425e-b0b9-6dc261a17b3f</msg>
+<msg timestamp="20250306 23:15:20.117" level="INFO">Successfully changed active browser: browser=1df31c76-1fb6-425e-b0b9-6dc261a17b3f</msg>
+<msg timestamp="20250306 23:15:20.117" level="INFO">Reusing existing browser with id: browser=1df31c76-1fb6-425e-b0b9-6dc261a17b3f</msg>
+<status status="PASS" starttime="20250306 23:15:20.110" endtime="20250306 23:15:20.117"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://www.udemy.com/</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20250306 23:15:28.252" level="INFO">Successfully initialized new page object and opened url: https://www.udemy.com/</msg>
+<msg timestamp="20250306 23:15:28.252" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20250306 23:15:20.118" endtime="20250306 23:15:28.253"/>
+</kw>
+<status status="PASS" starttime="20250306 23:15:20.108" endtime="20250306 23:15:28.253"/>
+</kw>
+<kw name="Attemp Signup" library="Custodia">
+<arg>${EMPTY}</arg>
+<arg>marcelalima_@msn.comando</arg>
+<arg>01234567890</arg>
+<arg>Por favor informe o seu nome</arg>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${account}</var>
+<arg>name=${name}</arg>
+<arg>email=${email}</arg>
+<arg>cpf=${cpf}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20250306 23:15:28.267" level="INFO">${account} = {'name': '', 'email': 'marcelalima_@msn.comando', 'cpf': '01234567890'}</msg>
+<status status="PASS" starttime="20250306 23:15:28.265" endtime="20250306 23:15:28.267"/>
+</kw>
+<kw name="Submit Signup Form" library="Custodia">
+<arg>${account}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>id=name</arg>
+<arg>${account}[name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20250306 23:15:28.271" level="INFO">Fills the text '' in the given field.</msg>
+<msg timestamp="20250306 23:15:38.897" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg timestamp="20250306 23:15:38.897" level="INFO">See also file:///C:/Users/maln/OneDrive%20-%20GFT%20Technologies%20SE/Documents/MeuProjeto/testes/.logs/playwright-log.txt for additional details.</msg>
+<msg timestamp="20250306 23:15:38.898" level="FAIL">TimeoutError: locator.fill: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('id=name')
+</msg>
+<status status="FAIL" starttime="20250306 23:15:28.270" endtime="20250306 23:15:38.901"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=email</arg>
+<arg>${account}[email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20250306 23:15:38.902" endtime="20250306 23:15:38.903"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=cpf</arg>
+<arg>${account}[cpf]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20250306 23:15:38.903" endtime="20250306 23:15:38.904"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>css=button[type="submit"] &gt;&gt; text=Enviar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20250306 23:15:38.904" endtime="20250306 23:15:38.905"/>
+</kw>
+<status status="FAIL" starttime="20250306 23:15:28.268" endtime="20250306 23:15:38.905"/>
+</kw>
+<kw name="Notice should be" library="Custodia">
+<arg>${output_message}</arg>
+<status status="NOT RUN" starttime="20250306 23:15:38.906" endtime="20250306 23:15:38.907"/>
+</kw>
+<status status="FAIL" starttime="20250306 23:15:28.262" endtime="20250306 23:15:38.907"/>
+</kw>
+<kw name="Attemp Signup" library="Custodia">
+<arg>Marcela</arg>
+<arg>${EMPTY}</arg>
+<arg>01234567890</arg>
+<arg>Por favor informe o seu email</arg>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${account}</var>
+<arg>name=${name}</arg>
+<arg>email=${email}</arg>
+<arg>cpf=${cpf}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20250306 23:15:38.914" level="INFO">${account} = {'name': 'Marcela', 'email': '', 'cpf': '01234567890'}</msg>
+<status status="PASS" starttime="20250306 23:15:38.911" endtime="20250306 23:15:38.914"/>
+</kw>
+<kw name="Submit Signup Form" library="Custodia">
+<arg>${account}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>id=name</arg>
+<arg>${account}[name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20250306 23:15:38.918" level="INFO">Fills the text 'Marcela' in the given field.</msg>
+<msg timestamp="20250306 23:15:49.479" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg timestamp="20250306 23:15:49.479" level="INFO">See also file:///C:/Users/maln/OneDrive%20-%20GFT%20Technologies%20SE/Documents/MeuProjeto/testes/.logs/playwright-log.txt for additional details.</msg>
+<msg timestamp="20250306 23:15:49.480" level="FAIL">TimeoutError: locator.fill: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('id=name')
+</msg>
+<status status="FAIL" starttime="20250306 23:15:38.917" endtime="20250306 23:15:49.484"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=email</arg>
+<arg>${account}[email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20250306 23:15:49.485" endtime="20250306 23:15:49.486"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=cpf</arg>
+<arg>${account}[cpf]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20250306 23:15:49.487" endtime="20250306 23:15:49.488"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>css=button[type="submit"] &gt;&gt; text=Enviar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20250306 23:15:49.488" endtime="20250306 23:15:49.490"/>
+</kw>
+<status status="FAIL" starttime="20250306 23:15:38.915" endtime="20250306 23:15:49.491"/>
+</kw>
+<kw name="Notice should be" library="Custodia">
+<arg>${output_message}</arg>
+<status status="NOT RUN" starttime="20250306 23:15:49.492" endtime="20250306 23:15:49.493"/>
+</kw>
+<status status="FAIL" starttime="20250306 23:15:38.909" endtime="20250306 23:15:49.494"/>
+</kw>
+<kw name="Attemp Signup" library="Custodia">
+<arg>Marcela</arg>
+<arg>marcelalima_@msn.comando</arg>
+<arg>${EMPTY}</arg>
+<arg>Por favor informe o seu cpf</arg>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${account}</var>
+<arg>name=${name}</arg>
+<arg>email=${email}</arg>
+<arg>cpf=${cpf}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20250306 23:15:49.772" level="INFO">${account} = {'name': 'Marcela', 'email': 'marcelalima_@msn.comando', 'cpf': ''}</msg>
+<status status="PASS" starttime="20250306 23:15:49.764" endtime="20250306 23:15:49.772"/>
+</kw>
+<kw name="Submit Signup Form" library="Custodia">
+<arg>${account}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>id=name</arg>
+<arg>${account}[name]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20250306 23:15:49.781" level="INFO">Fills the text 'Marcela' in the given field.</msg>
+<msg timestamp="20250306 23:16:00.214" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-4.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-4.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg timestamp="20250306 23:16:00.214" level="INFO">See also file:///C:/Users/maln/OneDrive%20-%20GFT%20Technologies%20SE/Documents/MeuProjeto/testes/.logs/playwright-log.txt for additional details.</msg>
+<msg timestamp="20250306 23:16:00.214" level="FAIL">TimeoutError: locator.fill: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('id=name')
+</msg>
+<status status="FAIL" starttime="20250306 23:15:49.778" endtime="20250306 23:16:00.218"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=email</arg>
+<arg>${account}[email]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20250306 23:16:00.218" endtime="20250306 23:16:00.219"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=cpf</arg>
+<arg>${account}[cpf]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20250306 23:16:00.220" endtime="20250306 23:16:00.221"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>css=button[type="submit"] &gt;&gt; text=Enviar</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20250306 23:16:00.222" endtime="20250306 23:16:00.224"/>
+</kw>
+<status status="FAIL" starttime="20250306 23:15:49.775" endtime="20250306 23:16:00.225"/>
+</kw>
+<kw name="Notice should be" library="Custodia">
+<arg>${output_message}</arg>
+<status status="NOT RUN" starttime="20250306 23:16:00.227" endtime="20250306 23:16:00.228"/>
+</kw>
+<status status="FAIL" starttime="20250306 23:15:49.760" endtime="20250306 23:16:00.229"/>
+</kw>
+<kw name="Take Screenshot" library="Browser" type="TEARDOWN">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20250306 23:16:00.545" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20250306 23:16:00.237" endtime="20250306 23:16:00.546"/>
+</kw>
+<status status="FAIL" starttime="20250306 23:15:20.099" endtime="20250306 23:16:00.551">Several failures occurred:
+
+1) TimeoutError: locator.fill: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('id=name')
+
+
+2) TimeoutError: locator.fill: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('id=name')
+
+
+3) TimeoutError: locator.fill: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('id=name')
+</status>
+</test>
+<doc>Hello Robot</doc>
+<status status="FAIL" starttime="20250306 23:14:38.079" endtime="20250306 23:16:00.873"/>
+</suite>
+<status status="FAIL" starttime="20250306 23:14:38.004" endtime="20250306 23:16:00.898"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1" name="Ct0001">Test.Ct0001</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20250306 23:14:40.613" level="WARN">Imported library 'selenium' contains no keywords.</msg>
+</errors>
+</robot>

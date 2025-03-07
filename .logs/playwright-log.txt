@@ -1,0 +1,201 @@
+{"level":30,"time":"2025-03-07T02:14:47.348Z","pid":29572,"hostname":"BRPC015481","msg":"Listening on 62979"}
+(node:29572) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-03-07T02:14:48.182Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-03-07T02:14:50.398Z","pid":29572,"hostname":"BRPC015481","msg":"Adding browser to stack: chromium, version: 133.0.6943.16"}
+{"level":30,"time":"2025-03-07T02:14:50.401Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-03-07T02:14:50.401Z","pid":29572,"hostname":"BRPC015481","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-03-07T02:14:50.424Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-03-07T02:14:50.426Z","pid":29572,"hostname":"BRPC015481","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-03-07T02:14:50.584Z","pid":29572,"hostname":"BRPC015481","msg":"Changed active context"}
+{"level":30,"time":"2025-03-07T02:14:52.150Z","pid":29572,"hostname":"BRPC015481","msg":"Video path: undefined"}
+{"level":30,"time":"2025-03-07T02:14:52.152Z","pid":29572,"hostname":"BRPC015481","msg":"Changed active page"}
+================= Original suppressed error =================
+page.goto: Timeout 10000ms exceeded.
+Call log:
+[2m  - navigating to "https://www.udemy.com/", waiting until "load"[22m
+
+    at newPage (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:12567:18)
+    at async PlaywrightServer.newPage (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-03-07T02:15:02.178Z","pid":29572,"hostname":"BRPC015481","msg":"Error of node method  newPage"}
+{"level":30,"time":"2025-03-07T02:15:02.742Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:10725:11)
+    at takeScreenshot (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:13132:34)
+    at Object.onReceiveHalfClose (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:570:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:610:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:377:18)
+    at ServerHttp2Stream.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-03-07T02:15:02.743Z","pid":29572,"hostname":"BRPC015481","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-03-07T02:15:03.315Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:10725:11)
+    at takeScreenshot (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:13132:34)
+    at Object.onReceiveHalfClose (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:570:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:610:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:377:18)
+    at ServerHttp2Stream.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-03-07T02:15:03.316Z","pid":29572,"hostname":"BRPC015481","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-03-07T02:15:03.561Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:10725:11)
+    at takeScreenshot (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:13132:34)
+    at Object.onReceiveHalfClose (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:570:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:610:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:377:18)
+    at ServerHttp2Stream.emit (node:events:519:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-03-07T02:15:03.562Z","pid":29572,"hostname":"BRPC015481","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2025-03-07T02:15:03.804Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:03.806Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:03.816Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:03.816Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:03.825Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:03.825Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:03.837Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:03.837Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:03.848Z","pid":29572,"hostname":"BRPC015481","msg":"Changed active context"}
+{"level":30,"time":"2025-03-07T02:15:03.853Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-03-07T02:15:03.942Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-03-07T02:15:03.970Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:03.970Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:03.982Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-03-07T02:15:03.982Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-03-07T02:15:03.993Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-03-07T02:15:03.993Z","pid":29572,"hostname":"BRPC015481","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-03-07T02:15:04.110Z","pid":29572,"hostname":"BRPC015481","msg":"Changed active context"}
+{"level":30,"time":"2025-03-07T02:15:06.350Z","pid":29572,"hostname":"BRPC015481","msg":"Video path: undefined"}
+{"level":30,"time":"2025-03-07T02:15:06.350Z","pid":29572,"hostname":"BRPC015481","msg":"Changed active page"}
+{"level":30,"time":"2025-03-07T02:15:08.365Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method newPage"}
+{"level":30,"time":"2025-03-07T02:15:08.472Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T02:15:08.474Z","pid":29572,"hostname":"BRPC015481","msg":"Strict mode is enabled, find Locator with id=name in page."}
+{"level":30,"time":"2025-03-07T02:15:18.488Z","pid":29572,"hostname":"BRPC015481","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('id=name')[22m
+
+    at fillText (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:11847:17)
+    at async PlaywrightServer.fillText (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-03-07T02:15:18.869Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-03-07T02:15:18.869Z","pid":29572,"hostname":"BRPC015481","Take screenshot with options: ":{"path":"C:\\Users\\maln\\OneDrive - GFT Technologies SE\\Documents\\MeuProjeto\\testes\\.logs\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-03-07T02:15:19.357Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-03-07T02:15:19.446Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-03-07T02:15:19.446Z","pid":29572,"hostname":"BRPC015481","Take screenshot with options: ":{"path":"C:\\Users\\maln\\OneDrive - GFT Technologies SE\\Documents\\MeuProjeto\\testes\\.logs\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-03-07T02:15:19.752Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-03-07T02:15:19.770Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:19.779Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:19.785Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:19.793Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:19.798Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:19.802Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:19.815Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:19.822Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:19.829Z","pid":29572,"hostname":"BRPC015481","msg":"Changed active context"}
+{"level":30,"time":"2025-03-07T02:15:19.829Z","pid":29572,"hostname":"BRPC015481","msg":"Changing current active page: page=d9c0ecb3-6467-4bdf-9664-f785568a1a65"}
+{"level":30,"time":"2025-03-07T02:15:19.829Z","pid":29572,"hostname":"BRPC015481","msg":"Changed active page"}
+{"level":30,"time":"2025-03-07T02:15:19.837Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-03-07T02:15:20.040Z","pid":29572,"hostname":"BRPC015481","msg":"Removed page=28b3707c-5814-4ea6-9dc5-a7e2e6ade515 from context=09c8f3ca-8376-435c-9db3-f8e919a8c0b0 page stack"}
+{"level":30,"time":"2025-03-07T02:15:20.072Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-03-07T02:15:20.104Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:20.105Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:15:20.114Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-03-07T02:15:20.114Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-03-07T02:15:20.127Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-03-07T02:15:20.127Z","pid":29572,"hostname":"BRPC015481","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-03-07T02:15:20.246Z","pid":29572,"hostname":"BRPC015481","msg":"Changed active context"}
+{"level":30,"time":"2025-03-07T02:15:24.440Z","pid":29572,"hostname":"BRPC015481","msg":"Video path: undefined"}
+{"level":30,"time":"2025-03-07T02:15:24.440Z","pid":29572,"hostname":"BRPC015481","msg":"Changed active page"}
+{"level":30,"time":"2025-03-07T02:15:28.238Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method newPage"}
+{"level":30,"time":"2025-03-07T02:15:28.274Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T02:15:28.274Z","pid":29572,"hostname":"BRPC015481","msg":"Strict mode is enabled, find Locator with id=name in page."}
+{"level":30,"time":"2025-03-07T02:15:38.280Z","pid":29572,"hostname":"BRPC015481","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('id=name')[22m
+
+    at fillText (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:11847:17)
+    at async PlaywrightServer.fillText (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-03-07T02:15:38.404Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-03-07T02:15:38.405Z","pid":29572,"hostname":"BRPC015481","Take screenshot with options: ":{"path":"C:\\Users\\maln\\OneDrive - GFT Technologies SE\\Documents\\MeuProjeto\\testes\\.logs\\browser\\screenshot\\fail-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-03-07T02:15:38.892Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-03-07T02:15:38.922Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T02:15:38.922Z","pid":29572,"hostname":"BRPC015481","msg":"Strict mode is enabled, find Locator with id=name in page."}
+{"level":30,"time":"2025-03-07T02:15:48.937Z","pid":29572,"hostname":"BRPC015481","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('id=name')[22m
+
+    at fillText (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:11847:17)
+    at async PlaywrightServer.fillText (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-03-07T02:15:49.054Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-03-07T02:15:49.054Z","pid":29572,"hostname":"BRPC015481","Take screenshot with options: ":{"path":"C:\\Users\\maln\\OneDrive - GFT Technologies SE\\Documents\\MeuProjeto\\testes\\.logs\\browser\\screenshot\\fail-screenshot-3.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-03-07T02:15:49.474Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-03-07T02:15:49.787Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-03-07T02:15:49.787Z","pid":29572,"hostname":"BRPC015481","msg":"Strict mode is enabled, find Locator with id=name in page."}
+{"level":30,"time":"2025-03-07T02:15:59.798Z","pid":29572,"hostname":"BRPC015481","msg":"Error of node method  fillText"}
+================= Original suppressed error =================
+locator.fill: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('id=name')[22m
+
+    at fillText (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:11847:17)
+    at async PlaywrightServer.fillText (C:\Users\maln\AppData\Local\Programs\Python\Python311\Lib\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-03-07T02:15:59.912Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-03-07T02:15:59.912Z","pid":29572,"hostname":"BRPC015481","Take screenshot with options: ":{"path":"C:\\Users\\maln\\OneDrive - GFT Technologies SE\\Documents\\MeuProjeto\\testes\\.logs\\browser\\screenshot\\fail-screenshot-4.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-03-07T02:16:00.210Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-03-07T02:16:00.244Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-03-07T02:16:00.244Z","pid":29572,"hostname":"BRPC015481","Take screenshot with options: ":{"path":"C:\\Users\\maln\\OneDrive - GFT Technologies SE\\Documents\\MeuProjeto\\testes\\.logs\\browser\\screenshot\\robotframework-browser-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-03-07T02:16:00.541Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-03-07T02:16:00.566Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:16:00.571Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:16:00.579Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:16:00.586Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:16:00.595Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:16:00.600Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:16:00.609Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:16:00.613Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:16:00.619Z","pid":29572,"hostname":"BRPC015481","msg":"Changed active context"}
+{"level":30,"time":"2025-03-07T02:16:00.619Z","pid":29572,"hostname":"BRPC015481","msg":"Changing current active page: page=fba1c113-a1e1-45c3-b888-8534291fae41"}
+{"level":30,"time":"2025-03-07T02:16:00.619Z","pid":29572,"hostname":"BRPC015481","msg":"Changed active page"}
+{"level":30,"time":"2025-03-07T02:16:00.625Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-03-07T02:16:00.729Z","pid":29572,"hostname":"BRPC015481","msg":"Removed page=61b5dcd0-1f26-46ad-a503-8d3bc23e7244 from context=d73b7c75-5d94-4a10-905b-fc4f4b8dfc92 page stack"}
+{"level":30,"time":"2025-03-07T02:16:00.783Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-03-07T02:16:00.885Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:16:00.886Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-03-07T02:16:01.192Z","pid":29572,"hostname":"BRPC015481","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-03-07T02:16:03.111Z","pid":29572,"hostname":"BRPC015481","msg":"End of node method closeAllBrowsers"}
